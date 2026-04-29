@@ -8,3 +8,6 @@ class Salgadinho(models.Model):
     color = models.CharField(max_length=20, blank=True, null=True)
     factory_day = models.DateField()
     value = models.FloatField()
+
+    def __str__(self):
+        return self.flavor
